@@ -15,6 +15,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   transition: .3s ease-in-out all;
+  border: 1px solid red;
 }
 a,li{
   color: white;
@@ -62,7 +63,6 @@ button {
     font-family: var(--inter-font);
     font-weight: 400;
     font-size: clamp(5px, 2vw, 14px);
-    white-space: nowrap;
     background: transparent;
     width: max-content;
   @media (max-width: 768px) {
