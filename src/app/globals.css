@@ -15,7 +15,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   transition: .3s ease-in-out all;
-  border: 1px solid red;
 }
 a,li{
   color: white;
