@@ -1,13 +1,7 @@
 .get-in-touch{
     width: 100%;
     padding: 5vh 10vw;
-    background: 
-    linear-gradient(
-      to bottom, 
-      rgba(0, 0, 0, 0.45) , 
-      rgba(0, 0, 0, 0.37)
-    ),
-    url('../../public/assests/mobile-form-bg.jpg');
+    background: #fff;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

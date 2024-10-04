@@ -18,8 +18,12 @@
     padding: 2vh 1vw;
     display: flex;
     column-gap: 1vw;
+    row-gap: 4vh;
+    height: 100%;
     @media screen and (max-width: 950px) {
         padding: 4vh 4vw;
+        flex-direction: column;
+        align-items: center;
     }
 }
 .packageCard:hover{
@@ -49,12 +53,10 @@
     border-radius: 8px;
     grid-template-rows: 200px 100px;
     grid-template-columns: 1fr;
-    width: 230px;
-    @media screen and (min-width:700px) and (max-width: 950px) {
-        display: none;
-    }
-    @media screen and (max-width: 480px) {
-        display: none;
+    min-width: 120px;
+    @media screen and (max-width: 950px) {
+        grid-template-rows: 200px 150px;
+        width: 100%;
     }
 }
 
@@ -62,12 +64,18 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+    @media screen and (max-width:950px) {
+        object-fit: cover;
+    }
 }
 
 .below-photo img{
     object-position: 50% 50%;
     height: 100%;
     width: 50%;
+    @media screen and (max-width:950px) {
+        object-fit: cover;
+    }
 }
 .card-content{
     display: flex;
@@ -75,24 +83,26 @@
     flex-wrap: wrap;
     font-weight: 600;
     font-family: var(--inter-font);
-
-    width: 100%;
+    width: fit-content;
 }
 .card-content h2{
     font-size: clamp(14px, 2vw, 16px);
     color: #041a34;
+    width: fit-content;
 }
 .card-content p{
     font-family: var(--inter-font);
     font-size: clamp(10px, 2vw, 12px);
     color: var(--grey-color);
     padding: .5vh 0;
+    width: fit-content;
 }
 .card-content .pricing{
     display: flex;
     align-items: center;
     column-gap: .8vw;
     color: var(--blue-color);
+    width: fit-content;
 }
 .card-content .pricing h4{
     color: #0868F8;
@@ -110,6 +120,9 @@
     font-weight: 600;
 }
 
+.services{
+    width: fit-content;
+}
 .services li span{
     background: #34C759;
     height: 18px;
@@ -120,9 +133,9 @@
 }
 .services li{
     text-align: left;
-    width: 100%;
     display: flex;
     align-items: center;
+    width: fit-content;
     column-gap: 1vw;
     font-family: var(--inter-font);
     font-size: clamp(10px, 2vw, 12px);
@@ -132,11 +145,10 @@
 }
 .service-booking-buttons{
     display: flex;
-    align-items: wrap
-    ;
+    align-items: wrap;
     gap: 2vw;
     margin-top: auto;
-    justify-items: flex-end;
+    width: fit-content;
     @media screen and (min-width: 600px )and (max-width:950px) {
         margin-top: 10px;
     }
