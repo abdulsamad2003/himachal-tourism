@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from 'react';
 import "../styles/Form.css";
-
+import { sendGTMEvent } from '@next/third-parties/google'
+ 
 const Form = () => {
+  
   const [formStatus, setFormStatus] = useState(null); // Track form status
 
   async function handleSubmit(event) {
@@ -134,7 +136,9 @@ const Form = () => {
         ></textarea><br /><br />
 
         <div className="contactButton">
-          <button style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
+          <button 
+           onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}
+          style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
         </div>
 
         {formStatus === 'success' && <p className="success-message">Form submitted successfully!</p>}
