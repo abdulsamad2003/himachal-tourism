@@ -7,7 +7,7 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 
 import "../styles/Navbar.css";
-import { sendGTMEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Navbar = () => {
   const [check, setCheck] = useState(false);
@@ -62,7 +62,7 @@ const Navbar = () => {
         </ul>
         <a href="tel:+91 9876543210">
           <div className="contactButton">
-            <button  onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}
+            <button onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
               >(+91) 9876543210</button>
             <FaPhoneAlt color="white" />
           </div>

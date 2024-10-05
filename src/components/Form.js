@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import "../styles/Form.css";
-import { sendGTMEvent } from '@next/third-parties/google'
+import { sendGAEvent } from '@next/third-parties/google'
  
 const Form = () => {
   
@@ -137,7 +137,7 @@ const Form = () => {
 
         <div className="contactButton">
           <button 
-           onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}
+           onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
           style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
         </div>
 

@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
 
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
  
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <GoogleTagManager gaId="G-3ZZS5W9MWY" />
+      <GoogleAnalytics gaId="G-3ZZS5W9MWY" />
         <Navbar />
         {children}
         <Footer />
