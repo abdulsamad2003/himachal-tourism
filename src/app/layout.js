@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const phoneNumber = "+918219326504";
+  const phoneNumber = "+917836098136";
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
         </div>
         <div className="fixed-links phone">
           <a
-            href="tel:+91 8219326504"
+            href="tel:+91 7836098136"
             target="_blank"
             rel="noopener noreferrer"
           >
