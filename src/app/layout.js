@@ -29,17 +29,13 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       
    {/* Google Analytics for multiple GAIDs */}
-   <Script
+        <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-3ZZS5W9MWY`}
         />
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=AW-10780195999`}
-        />
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-DSLQ6LMKK8`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-63LBC7QJ2F`}
         />
         <Script
           id="google-analytics"
@@ -54,10 +50,7 @@ export default function RootLayout({ children }) {
               gtag('config', 'G-3ZZS5W9MWY');
 
               // Initialize the second GA ID
-               gtag('config', 'AW-10780195999');
-
-               // Initialize the third GA ID
-               gtag('config', 'G-DSLQ6LMKK8');
+               gtag('config', 'G-63LBC7QJ2F');
             `,
           }}
         />
