@@ -36,7 +36,7 @@ const Navbar = () => {
     <header className={`header  ${stickyHeader}`}>
       <ul className="upper-fixed-links">
         <a target="_blank" href="mailto:sales@himachaltourismguide.in"><li>sales@himachaltourismguide.in</li></a>
-        <a target="_blank" href="tel:+91 7836098136"><li>+91 7836098136</li></a>
+        <a target="_blank" href="tel:+91 8219326504"><li>+91 8219326504</li></a>
       </ul>
     </header>
     <nav className={`navbar  ${stickyNav}`}>

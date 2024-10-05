@@ -47,7 +47,7 @@ const Footer = () => {
             </span>
           </a>
 
-          <a target="_blank" href={`https://wa.me/+917836098136`}>
+          <a target="_blank" href={`https://wa.me/+918219326504`}>
             <span className="icon">
               <FaWhatsapp color="white" size={"15px"} />
             </span>
@@ -101,11 +101,11 @@ const Footer = () => {
               </li>
               <li>
                 <span>Phone no:</span>
-                <Link href="tel:+91 7836098136">+91 7836098136</Link>
+                <Link href="tel:+91 8219326504">+91 8219326504</Link>
               </li>
               <li className="hover">
                 <span>Address</span>
-                <Link href="tel:+91 7836098136">
+                <Link href="tel:+91 8219326504">
                   Near stop n shop, Kelti, Himachal Pradesh Pin-code:171003
                 </Link>
               </li>
