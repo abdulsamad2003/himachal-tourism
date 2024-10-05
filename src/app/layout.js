@@ -35,6 +35,10 @@ export default function RootLayout({ children }) {
         />
         <Script
           strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-YM3TJ3M6G1`}
+        />        
+        <Script
+          strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-63LBC7QJ2F`}
         />
         <Script
@@ -48,6 +52,9 @@ export default function RootLayout({ children }) {
 
               // Initialize the first GA ID
               gtag('config', 'G-3ZZS5W9MWY');
+
+              // Initialize the New site GA ID
+              gtag('config', 'G-YM3TJ3M6G1');
 
               // Initialize the second GA ID
                gtag('config', 'G-63LBC7QJ2F');
