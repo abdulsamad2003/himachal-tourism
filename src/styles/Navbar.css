@@ -8,6 +8,9 @@
     background: #232424;
     color: white;
     width: 100%;
+    @media screen and (max-width: 700px) {
+      padding: 3.2vh 10vw;                                                                                                                                                        
+    }
 }
 .header .upper-fixed-links{
   display: flex;
