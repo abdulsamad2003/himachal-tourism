@@ -3,9 +3,9 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import Script from "next/script"; // Use Script for proper loading of GA scripts
 
-import { GoogleAnalytics } from '@next/third-parties/google'
- 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,7 +27,41 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <GoogleAnalytics gaId="G-3ZZS5W9MWY" />
+      
+   {/* Google Analytics for multiple GAIDs */}
+   <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-3ZZS5W9MWY`}
+        />
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-10780195999`}
+        />
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-DSLQ6LMKK8`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              // Initialize the first GA ID
+              gtag('config', 'G-3ZZS5W9MWY');
+
+              // Initialize the second GA ID
+               gtag('config', 'AW-10780195999');
+
+               // Initialize the third GA ID
+               gtag('config', 'G-DSLQ6LMKK8');
+            `,
+          }}
+        />
+
         <Navbar />
         {children}
         <Footer />
