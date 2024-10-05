@@ -21,17 +21,25 @@ a,li{
   text-decoration: none;
   list-style: none;
 }
-.whatsapp{
+.fixed-links{
   display: grid;
   place-items: center;
   background: green;
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  height: 10vh;
+  width: 10vh;
   position: fixed;
   bottom: 7vh;
   right: 3vw;
   z-index: 111111111;
+}
+.whatsapp{
+  bottom: 5vh;
+  right: 3vw;
+}
+.phone{
+  bottom: 18vh;
+  right: 3vw;
 }
 .link-text{
   font-family: "Figtree", sans-serif;

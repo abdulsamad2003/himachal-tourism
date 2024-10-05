@@ -2,7 +2,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+
+import { GoogleTagManager } from '@next/third-parties/google'
+ 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -20,17 +23,31 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const phoneNumber = '+917836098136'
+  const phoneNumber = "+917836098136";
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar/>
+      <GoogleTagManager gtmId="G-3ZZS5W9MWY" />
+        <Navbar />
         {children}
-        <Footer/>
-        <div className="whatsapp">
-            <a  href={`https://wa.me/${phoneNumber}`}
-        target="_blank"
-        rel="noopener noreferrer"> <FaWhatsapp size={40}/></a>
+        <Footer />
+        <div className="fixed-links whatsapp">
+          <a
+            href={`https://wa.me/${phoneNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp size={25} />
+          </a>
+        </div>
+        <div className="fixed-links phone">
+          <a
+            href="tel:+91 7836098136"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaPhone size={20} />
+          </a>
         </div>
       </body>
     </html>

@@ -1,3 +1,36 @@
+.header{
+    position: fixed;
+    padding: 2.5vh 10vw;                                                                                                                                                        
+    width: 100%;
+    z-index: 1111;
+    top: 0;
+    left: 0;
+    background: #232424;
+    color: white;
+    width: 100%;
+}
+.header .upper-fixed-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5vh; 
+  @media screen and (max-width: 500px) {
+    column-gap: 2vh;
+  } 
+}
+.header .upper-fixed-links li{
+  color: white;
+  font-family: var(--inter-font);
+  font-size: clamp(12px, 2.2vw, 18px);
+  white-space: nowrap;
+}
+.header .upper-fixed-links a:hover li{
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+.stickyHeader{
+  top: 0;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -5,13 +38,13 @@
     padding: 1vh 10vw;
     width: 100%;
     z-index: 1111;
-
+    top: 8vh;
     @media screen and (max-width:1024px) {
         padding: 2vh 5vw;
     }
 }
 .stickyNav{
-  top: 0;
+  top: 8vh;
   transition: .400s ease-in;
   background: #232424;
 }

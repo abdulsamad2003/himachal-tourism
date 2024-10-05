@@ -97,7 +97,7 @@ const Footer = () => {
             <ul>
               <li>
                 <span>Email</span>
-                <Link href="/">sales@himachaltourismguide.in</Link>
+                <Link href="mailto:sales@himachaltourismguide.in">sales@himachaltourismguide.in</Link>
               </li>
               <li>
                 <span>Phone no:</span>
