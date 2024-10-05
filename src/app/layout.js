@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <GoogleTagManager gtmId="G-3ZZS5W9MWY" />
+      <GoogleTagManager gaId="G-3ZZS5W9MWY" />
         <Navbar />
         {children}
         <Footer />
