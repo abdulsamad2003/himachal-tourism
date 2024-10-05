@@ -60,10 +60,10 @@ const Navbar = () => {
             <Link href="#deals">Deals</Link>
           </li>
         </ul>
-        <a href="tel:+91 9876543210">
+        <a href="tel:+91 7836098136">
           <div className="contactButton">
             <button onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
-              >(+91) 9876543210</button>
+              >(+91) 7836098136</button>
             <FaPhoneAlt color="white" />
           </div>
         </a>
