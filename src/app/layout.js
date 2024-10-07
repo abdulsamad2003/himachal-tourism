@@ -27,6 +27,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+
+  {/* Google Tag Manager */}
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-P37T4NB3');
+            `,
+          }}
+        />        
       
    {/* Google Analytics for multiple GAIDs */}
         <Script
@@ -61,7 +76,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* Hotjar Tracking Code */}
+    {/* Hotjar Tracking Code */}
         <Script
           id="hotjar"
           strategy="afterInteractive"
@@ -78,7 +93,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* Microsoft Clarity Code */}
+    {/* Microsoft Clarity Code */}
         <Script
           id="clarity"
           strategy="afterInteractive"
@@ -92,7 +107,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* Meta Pixel Code */}
+    {/* Meta Pixel Code */}
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
