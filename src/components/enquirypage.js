@@ -5,8 +5,8 @@ const enquirypage = () => {
   return (
     <section className="enquiry-page">
         <div className="content">
-            <h1>Fill Below Form For Enquiry</h1>
-            <p>Fill The Form And Get all information regarding the packages and discounts</p>
+            <h1>Unlock Exclusive Deals on Shimla, Manali, Kaza & Dharamshala!</h1>
+            <p>Get FREE travel consultation for your Himachal getaway</p>
         </div>
         <div className="form-in-hero-section">
         <Form/>
