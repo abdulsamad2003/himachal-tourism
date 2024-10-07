@@ -100,7 +100,7 @@ const PopupForm = ({ isPopupVisible, setIsPopupVisible }) => {
             </button>
             <form onSubmit={handleSubmit}>
               <h2>Enquire Now for Free!</h2>
-              <p>Talk to a Travel Expert for Free! We'll Call You.</p>
+              <p>Talk to a Travel Expert for Free! We&apos;ll Call You.</p>
 
               <label htmlFor="phone">Phone Number</label>
               <br />
