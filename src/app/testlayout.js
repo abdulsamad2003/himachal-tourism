@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import Script from "next/script"; // Use Script for proper loading of GA scripts
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -28,7 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       
-   {/* Google Analytics for multiple GAIDs */}
+        {/* Google Analytics for multiple GAIDs */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-3ZZS5W9MWY`}
@@ -61,6 +60,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
         {/* Hotjar Tracking Code */}
         <Script
           id="hotjar"
@@ -78,6 +78,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
         {/* Microsoft Clarity Code */}
         <Script
           id="clarity"
@@ -92,6 +93,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+
         {/* Meta Pixel Code */}
         <Script
           id="meta-pixel"
@@ -118,7 +120,8 @@ export default function RootLayout({ children }) {
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=1255410015588930&ev=PageView&noscript=1"
           />
-        </noscript>                
+        </noscript>
+
         <Navbar />
         {children}
         <Footer />
