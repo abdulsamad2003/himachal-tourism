@@ -4,19 +4,19 @@
     "title": "MANALI VOLVO PACKAGE FOR COUPLE",
     "duration": "03 Nights / 04 Days",
     "placesCovered": "Manali",
-    "price": "₹ 15,999",
+    "price": "₹ 22,856",
     "originalPrice": "₹ 32,999",
-    "discount": "GET 50% OFF *",
+    "discount": "GET 30% OFF *",
     "image1": "/assests/manali-1.jpg",
     "image2": "/assests/manali-2.jpg",
     "image3": "/assests/manali-3.jpg",
     "services": [
-      "Accommodation on twin sharing / triple sharing.",
-      "Manali sightseen",
-      "Volvo Tickets Both side",
-      "Separate cab for sightseen.",
-      "Free pick up & drop from Bus Stand to Hotel",
-      "Free wifi"
+      "Accommodation: 3 Nights stay (twin sharing basis)",
+      "Sightseeing: Manali local attractions tour",
+      "Travel: Volvo Tickets (both ways)",
+      "Transportation: Separate cab for sightseeing",
+      "Transfers: Free pick up & drop (Bus Stand to Hotel)",
+      "Meals: 4 Breakfasts, 3 Dinners (in hotel)"
     ]
   },
   {
@@ -25,18 +25,18 @@
     "duration": "5 Nights / 6 Days",
     "placesCovered": "Shimla-Kullu-Manali-Chd",
     "price": "₹ 7,999",
-    "originalPrice": "₹ 14,999",
-    "discount": "GET 50% OFF *",
+    "originalPrice": "₹ 10,665",
+    "discount": "GET 25% OFF *",
     "image1": "/assests/shimla-1.jpg",
     "image2": "/assests/shimla-2.jpg",
     "image3": "/assests/shimla-3.jpg",
     "services": [
-      "Accommodation for 5 nights",
-      "Welcome drinks on arrival in hotels.",
-      "sightseen",
-      "5 breakfast and 5 Dinner in Hotel.",
-      "Separate cab for 6 Days",
-      "Free wifi"
+      "Accommodation: 5 Nights stay (twin sharing basis)",
+      "Hospitality: Welcome drinks on arrival",
+      "Sightseeing: Guided tour of local attractions",
+      "Meals: 6 Breakfasts, 5 Dinners (in hotel)",
+      "Transportation: Separate cab for 6 Days",
+      "Transfers: Airport/Railway station pick up and drop"
     ]
   },
   {
@@ -45,18 +45,18 @@
     "duration": "06 Days / 05 Nights",
     "placesCovered": "Shimla-Kullu- Manali",
     "price": "₹ 25,999",
-    "originalPrice": "₹ 50,999",
-    "discount": "GET 50% OFF *",
+    "originalPrice": "₹ 37,141",
+    "discount": "GET 30% OFF *",
     "image1": "/assests/himachal-1.jpg",
     "image2": "/assests/himachal-2.jpg",
     "image3": "/assests/himachal-3.jpg",
     "services": [
-      "Accommodation for 5 nights",
-      "sightseen",
-      "5 breakfast and 5 Dinner in Hotel.",
-      "Individual Cab for all sightseeing in the itinerary",
-      "Welcome drinks on arrival in hotels.",
-      "Free wifi"
+      "Accommodation: 5 Nights stay (twin sharing basis)",
+      "Sightseeing: Guided local tours",
+      "Meals: 5 Breakfasts, 5 Dinners (in hotel)",
+      "Transportation: Individual Cab for all sightseeing",
+      "Inclusions: Honeymoon Cake/Flower Bed Decoration etc..",
+      "Transfers: Airport/Railway station pick up and drop"
     ]
   },
   {
@@ -65,37 +65,37 @@
     "duration": "09 Nights / 10 Days",
     "placesCovered": "Shimla-Kullu-Manali-Dharamshala-Dalhouise-Amritsar",
     "price": "₹ 14,999",
-    "originalPrice": "₹ 28,999",
-    "discount": "GET 50% OFF *",
+    "originalPrice": "₹ 19,998",
+    "discount": "GET 25% OFF *",
     "image1": "/assests/golden-temple-1.jpg",
     "image2": "/assests/himachal-1.jpg",
     "image3": "/assests/himachal-2.jpg",
     "services": [
-      " Accommodation for 9 nights.",
-      "sightseen",
-      "9 breakfasts and 9 Dinner in Hotel.",
-      "Separate cab for 10 days",
-      "Free wifi"
+      "Accommodation: 9 Nights (twin sharing basis)",
+      "Sightseeing: Local attractions covered",
+      "Meals: 10 Breakfasts, 9 Dinners (in hotel)",
+      "Transportation: Separate cab for 10 days",
+      "Transfers: Airport/Railway station pick up and drop"
     ]
   },
    {
     "id": 5,
-    "title": "Shimla tour Package",
+    "title": "SHIMLA TOUR PACKAGE",
     "duration": "2 Nights / 03 Days 2 overnight journey",
     "placesCovered": "Shimla",
     "price": "₹ 4,999",
-    "originalPrice": "₹ 10,999",
-    "discount": "GET 50% OFF *",
+    "originalPrice": "₹ 7,141",
+    "discount": "GET 30% OFF *",
     "image1": "/assests/shimla-2.jpg",
     "image2": "/assests/shimla-1.jpg",
     "image3": "/assests/shimla-3.jpg",
     "services": [
-      "Accommodation for 2 nights",
-      "sightseen",
-      "2 breakfasts and 2 Dinner in Hotel.",
-      "Separate cab for 2 days",
-      "Volvo Tickets for both sides.",
-      "Free wifi"
+      "Accommodation: 2 Nights (twin sharing basis)",
+      "Sightseeing: Local attractions covered",
+      "Meals: 3 Breakfasts, 2 Dinners (in hotel)",
+      "Transportation: Separate cab for 3 days",
+      "Travel: Volvo Tickets (both ways)",
+      "Amenities: Free WiFi"
     ]
   },
   {
@@ -104,55 +104,55 @@
     "duration": "08 Nights / 9 Days",
     "placesCovered": "Shimla-Kullu-Manali-Dharamshala-Dalhouise",
     "price": "₹ 13,999",
-    "originalPrice": "₹ 28,999",
-    "discount": "GET 50% OFF *",
+    "originalPrice": "₹ 19,998",
+    "discount": "GET 30% OFF *",
     "image1": "/assests/dal-housie.jpg",
     "image2": "/assests/himachal-1.jpg",
     "image3": "/assests/himachal-2.jpg",
     "services": [
-      "sightseen",
-      "8 Nights accommodation on twin sharing basis",
-      "9 breakfast and 8 Dinner in Hotel",
-      "Separate cab for 9 days",
-      "Free wifi"
+      "Sightseeing: Local attractions covered",
+      "Accommodation: 8 Nights (twin sharing basis)",
+      "Meals: 9 Breakfasts, 8 Dinners (in hotel)",
+      "Transportation: Separate cab for 9 days",
+      "Transfers: Airport/Railway station pick up and drop"
     ]
   },
   {
     "id": 7,
-    "title": "Manali Honeymoon Tour",
+    "title": "MANALI HONEYMOON POUR",
     "duration": "03 Nights / 04 Days",
     "placesCovered": "Manali",
     "price": "₹ 05,999",
-    "originalPrice": "₹ 10,999",
-    "discount": "GET 50% OFF *",
+    "originalPrice": "₹ 7,998",
+    "discount": "GET 25% OFF *",
     "image1": "/assests/manali-5.jpg",
     "image2": "/assests/shimla-2.jpg",
     "image3": "/assests/shimla-1.jpg",
     "services": [
-      "Accommodation for 2 nights",
-      "sightseen",
-      "4 breakfasts and 3 Dinner in Hotel.",
-      "Separate cab for 3 days",
-      "Free wifi"
+      "Accommodation: 3 nights on twin sharing basis",
+      "Sightseeing: Local attractions included",
+      "Meals: 4 breakfasts and 3 dinners in hotel",
+      "Transportation: Separate cab for 4 days",
+      "Transfers: Pick up and drop from Airport/Railway station"
     ]
   },
   {
     "id": 8,
-    "title": "Manali Kasol Manalikaran Tour By Volvo",
+    "title": "MANALI KASOL MANIKARAN TOUR BY VOLVO",
     "duration": "09 Nights / 10 Days",
     "placesCovered": "Manali-Kasol-Manalikaran" ,
     "price": "₹ 21,000",
-    "originalPrice": "₹ 44,999",
-    "discount": "GET 50% OFF *",
+    "originalPrice": "₹ 30,000",
+    "discount": "GET 30% OFF *",
     "image1": "/assests/kasol.jpg",
     "image2": "/assests/himachal-1.jpg",
     "image3": "/assests/himachal-2.jpg",
     "services": [
-      "sightseen",
-      "9 Nights accommodation on twin sharing basis",
-      "9 bed tea 9 breakfast and 9 Dinner in Hotel",
-      "Separate cab for 10 days",
-      "Free wifi"
+      "Sightseeing: Local sightseeing included in the itinerary",
+      "Accommodation: 9 Nights accommodation on twin sharing basis",
+      "Meals: 10 breakfast and 8 dinner in hotel",
+      "Transportation: Separate cab for 10 days",
+      "Transfers: Pick up and drop from Airport/Railway station"
     ]
   }
 ]
