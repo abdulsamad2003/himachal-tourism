@@ -99,8 +99,8 @@ const PopupForm = ({ isPopupVisible, setIsPopupVisible }) => {
               <IoMdClose size={"30px"} color="black" />
             </button>
             <form onSubmit={handleSubmit}>
-              <h2>Send Your Enquiry Now!</h2>
-              <p>Our Travel Expert Will Call You as soon as possible.</p>
+              <h2>Enquire Now for Free!</h2>
+              <p>Talk to a Travel Expert for Free! We'll Call You.</p>
 
               <label htmlFor="phone">Phone Number</label>
               <br />
