@@ -1,12 +1,23 @@
-import React from "react";
+"use client"
+import React,{useState} from "react";
 import "../styles/PackageCard.css";
 import Image from "next/image";
 import packageData from "../../public/PackageData/packageData.json"; // Import the JSON file
 import RightTick from "../../public/assests/right-tick.png"
-import Link from "next/link";
+import PopupForm from "./PopupForm";
 const PackageCard = () => {
+
+  const [isPopupVisible, setIsPopupVisible] = useState(false); // Manage popup visibility
+
+  const openPopup = () => {
+    setIsPopupVisible(true); // Function to open the popup
+  };
+
   return (
-    <section className="packageCardContainer">
+    <>
+        <PopupForm isPopupVisible={isPopupVisible} setIsPopupVisible={setIsPopupVisible} />
+
+       <section className="packageCardContainer">
       {packageData.map((packageItem) => (
         <div key={packageItem.id}> {/* Add key here */}
           <main className="packageCard">
@@ -62,12 +73,9 @@ const PackageCard = () => {
               </ul>
 
               <div className="service-booking-buttons">
-                <Link href="/enquirypage">
                   <div className="contactButton">
-                    <button>Enquiry Now</button>
-                  </div>
-                </Link>
-             
+                    <button onClick={openPopup} >Enquiry Now</button>
+                  </div>             
                 <div className="contactButton">
                   <a href="tel:+91 7836098136"><button>Call Now</button></a>
                 </div>
@@ -77,6 +85,10 @@ const PackageCard = () => {
         </div>
       ))}
     </section>
+
+
+    </>
+ 
   );
 };
 
