@@ -85,7 +85,7 @@ const PopularDestination = () => {
       
       <HappyCustomerCard 
         icon="/assests/rating-icon.png"
-        heading="4.5/5"
+        heading="4.9/5"
         para="10,000+ verified reviews with 90% excellent score"
       />
       
