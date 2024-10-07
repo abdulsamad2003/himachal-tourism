@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaMailBulk, FaPhoneAlt, FaVoicemail } from "react-icons/fa";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import { IoMdClose } from "react-icons/io";
+import { IoMdClose, IoMdMail } from "react-icons/io";
 
 import "../styles/Navbar.css";
 import { sendGAEvent } from "@next/third-parties/google";
@@ -35,8 +35,14 @@ const Navbar = () => {
     <>
     <header className={`header  ${stickyHeader}`}>
       <ul className="upper-fixed-links">
-        <a target="_blank" href="mailto:sales@himachaltourismguide.in"><li>sales@himachaltourismguide.in</li></a>
-        <a target="_blank" href="tel:+91 7836098136"><li>+91 7836098136</li></a>
+        <a target="_blank" href="mailto:sales@himachaltourismguide.in">
+            <IoMdMail color="white"/>
+          <li>sales@himachaltourismguide.in</li>
+        </a>
+        <a target="_blank" href="tel:+91 7836098136">
+            <FaPhoneAlt color="white"/>
+          <li>+91 7836098136</li>
+        </a>
       </ul>
     </header>
     <nav className={`navbar  ${stickyNav}`}>
@@ -60,10 +66,10 @@ const Navbar = () => {
             <Link href="#deals">Deals</Link>
           </li>
         </ul>
-        <a href="tel:+91 7836098136">
+        <a href="tel:+91 9876543210">
           <div className="contactButton">
             <button onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
-              >(+91) 7836098136</button>
+              >(+91) 9876543210</button>
             <FaPhoneAlt color="white" />
           </div>
         </a>
