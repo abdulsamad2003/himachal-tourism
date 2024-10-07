@@ -83,8 +83,8 @@ const Form = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="form">
-        <h2>Send Your Enquiry Now!</h2>
-        <p>Our Travel Expert Will Call You as soon as possible.</p>
+        <h2>FREE Travel Consultation!</h2>
+        <p> Enter your details in the enquiry form and Our travel expert will call you soon to</p>
 
         <label htmlFor="fullName">Full Name</label><br />
         <input
