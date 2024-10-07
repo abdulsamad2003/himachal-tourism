@@ -109,7 +109,7 @@ const PopupForm = ({ isPopupVisible, setIsPopupVisible }) => {
                 id="phone"
                 name="phone"
                 placeholder="Enter Your 10-digit mobile no."
-                pattern="[0-9]{10}"
+                pattern="^\+?[0-9]{10,12}$"
                 required
               />
               <br />
