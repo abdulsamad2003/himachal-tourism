@@ -51,8 +51,6 @@ const Form = () => {
       Name: ${object.fullName}
       Email: ${object.email}
       Phone: ${object.phone}
-      People: ${object.people}
-      Message: ${object.message}
       `;
 
       // Send message to Telegram
@@ -68,14 +66,13 @@ const Form = () => {
       });
 
       if (!telegramResponse.ok) {
-        console.error("Failed to send message to Telegram.");
         setFormStatus('error'); // Handle Telegram error
       }
 
-      // Automatically clear the success message after 20 seconds
+      // Automatically clear the success message after 10 seconds
       setTimeout(() => {
         setFormStatus(null);
-      }, 20000); // 20 seconds
+      }, 10000); // 10 seconds
 
     } catch (error) {
       console.error("Error submitting form:", error.message);
@@ -117,23 +114,6 @@ const Form = () => {
           title="Phone number must be exactly 10 digits"
           required
         /><br /><br />
-
-        <label htmlFor="people">No of People</label><br />
-        <input
-          type="number"
-          id="people"
-          name="people"
-          placeholder="10"
-          min="1"
-        /><br /><br />
-
-        <label htmlFor="message">Message</label><br />
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          placeholder="Type here..."
-        ></textarea><br /><br />
 
         <div className="contactButton">
           <button 
