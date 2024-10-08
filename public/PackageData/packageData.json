@@ -3,7 +3,7 @@
     "id": 1,
     "title": "SHIMLA TOUR PACKAGE",
     "duration": "2 Nights / 03 Days 2 overnight journey",
-    "placesCovered": "Shimla",
+    "placesCovered": "Delhi-Shimla-Delhi",
     "price": "₹ 4,999",
     "originalPrice": "₹ 7,141",
     "discount": "GET 30% OFF *",
@@ -13,7 +13,7 @@
     "services": [
       "Accommodation: 2 Nights (twin sharing basis)",
       "Sightseeing: Local attractions covered",
-      "Meals: 3 Breakfasts, 2 Dinners (in hotel)",
+      "Meals: 2 Breakfasts, 2 Dinners (in hotel)",
       "Transportation: Separate cab for 3 days",
       "Travel: Volvo Tickets (both ways)",
       "Amenities: Free WiFi"
@@ -23,7 +23,7 @@
     "id": 2,
     "title": "MANALI VOLVO PACKAGE FOR COUPLE",
     "duration": "03 Nights / 04 Days",
-    "placesCovered": "Manali",
+    "placesCovered": "Delhi-Manali-Delhi",
     "price": "₹ 5,999",
     "originalPrice": "₹ 8,570",
     "discount": "GET 30% OFF *",
@@ -36,14 +36,14 @@
       "Travel: Volvo Tickets (both ways)",
       "Transportation: Separate cab for sightseeing",
       "Transfers: Free pick up & drop (Bus Stand to Hotel)",
-      "Meals: 4 Breakfasts, 3 Dinners (in hotel)"
+      "Meals: 3 Breakfasts, 3 Dinners (in hotel)"
     ]
   },
   {
     "id": 3,
     "title": "MANALI HONEYMOON TOUR",
     "duration": "03 Nights / 04 Days",
-    "placesCovered": "Manali",
+    "placesCovered": "Delhi-Manali-Delhi",
     "price": "₹ 05,999",
     "originalPrice": "₹ 7,998",
     "discount": "GET 25% OFF *",
@@ -53,7 +53,7 @@
     "services": [
       "Accommodation: 3 nights on twin sharing basis",
       "Sightseeing: Local attractions included",
-      "Meals: 4 breakfasts and 3 dinners in hotel",
+      "Meals: 3 breakfasts and 3 dinners in hotel",
       "Transportation: Separate cab for 4 days",
       "Transfers: Pick up and drop from Airport/Railway station"
     ]
@@ -62,7 +62,7 @@
     "id": 4,
     "title": "SHIMLA MANALI TOUR BY CAB",
     "duration": "5 Nights / 6 Days",
-    "placesCovered": "Shimla-Kullu-Manali-Chd",
+    "placesCovered": "Chandigarh-Shimla-Kullu-Manali-Chdigarh",
     "price": "₹ 7,999",
     "originalPrice": "₹ 10,665",
     "discount": "GET 25% OFF *",
@@ -73,7 +73,7 @@
       "Accommodation: 5 Nights stay (twin sharing basis)",
       "Hospitality: Welcome drinks on arrival",
       "Sightseeing: Guided tour of local attractions",
-      "Meals: 6 Breakfasts, 5 Dinners (in hotel)",
+      "Meals: 5 Breakfasts, 5 Dinners (in hotel)",
       "Transportation: Separate cab for 6 Days",
       "Transfers: Airport/Railway station pick up and drop"
     ]
@@ -82,7 +82,7 @@
     "id": 5,
     "title": "SPITI VALLEY PACKAGE",
     "duration": "07 Days / 06 Nights",
-    "placesCovered": "DELHI-MANALI-KAZA-TABO-CHANDRA-TAL-DELHI",
+    "placesCovered": "DELHI-SHIMLA-KALPA-KAZA-HIKKIM-SPILLO-DELHI",
     "price": "₹ 16,999",
     "originalPrice": "₹ 24,284",
     "discount": "GET 30% OFF *",
@@ -92,7 +92,7 @@
     "services": [
       "Accommodation: 06 Nights stay (twin sharing basis)",
       "Sightseeing: Guided local tours",
-      "Meals: 07 Breakfasts, 06 Dinners (in hotel)",
+      "Meals: 06 Breakfasts, 06 Dinners (in hotel)",
       "Transportation: Individual Cab for all sightseeing",
       "Transfers: Airport/Bus Stand/Railway station pick up and drop",
       "Amenities: Free WiFi"
@@ -102,7 +102,7 @@
     "id": 6,
     "title": "HIMACHAL WITH GOLDEN TEMPLE",
     "duration": "09 Nights / 10 Days",
-    "placesCovered": "Shimla-Kullu-Manali-Dharamshala-Dalhouise-Amritsar",
+    "placesCovered": "Chandigarh-Shimla-Kullu-Manali-Dharamshala-Dalhouise-Amritsar-Chandigarh",
     "price": "₹ 14,999",
     "originalPrice": "₹ 19,998",
     "discount": "GET 25% OFF *",
@@ -112,7 +112,7 @@
     "services": [
       "Accommodation: 9 Nights (twin sharing basis)",
       "Sightseeing: Local attractions covered",
-      "Meals: 10 Breakfasts, 9 Dinners (in hotel)",
+      "Meals: 9 Breakfasts, 9 Dinners (in hotel)",
       "Transportation: Separate cab for 10 days",
       "Transfers: Airport/Railway station pick up and drop"
     ]
@@ -121,7 +121,7 @@
     "id": 7,
     "title": "SHIMLA MANALI DHRAMSHALA DALHOUSIE",
     "duration": "08 Nights / 9 Days",
-    "placesCovered": "Shimla-Kullu-Manali-Dharamshala-Dalhouise",
+    "placesCovered": "Delhi-Shimla-Kullu-Manali-Dharamshala-Dalhouise-Delhi",
     "price": "₹ 13,999",
     "originalPrice": "₹ 19,998",
     "discount": "GET 30% OFF *",
@@ -131,7 +131,7 @@
     "services": [
       "Sightseeing: Local attractions covered",
       "Accommodation: 8 Nights (twin sharing basis)",
-      "Meals: 9 Breakfasts, 8 Dinners (in hotel)",
+      "Meals: 8 Breakfasts, 8 Dinners (in hotel)",
       "Transportation: Separate cab for 9 days",
       "Transfers: Airport/Railway station pick up and drop"
     ]
@@ -140,7 +140,7 @@
     "id": 8,
     "title": "KINNAUR VALLEY PACKAGE",
     "duration": "05 Nights / 06 Days",
-    "placesCovered": "Manali-Kasol-Manalikaran" ,
+    "placesCovered": "DELHI-MANALI-KAZA-TABO-CHANDRA-TAL-DELHI" ,
     "price": "₹ 14,999",
     "originalPrice": "₹ 21,427",
     "discount": "GET 30% OFF *",
@@ -150,7 +150,7 @@
     "services": [
       "Sightseeing: Local sightseeing included in the itinerary",
       "Accommodation: 5 Nights accommodation on twin sharing basis",
-      "Meals: 06 breakfast and 05 dinner in hotel",
+      "Meals: 05 breakfast and 05 dinner in hotel",
       "Transportation: Separate cab for 06 days",
       "Transfers: Pick up and drop from Airport/Railway station"
     ]
