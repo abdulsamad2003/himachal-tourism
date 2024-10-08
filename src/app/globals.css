@@ -2,7 +2,7 @@
 :root {
   --blue-color: #0868F8;
   --dark-color: #262626;
-  --grey-color: #808080;
+  --grey-color: black;
 
   --thick-font: "IBM Plex Sans", sans-serif;
   --inter-font: "Inter", system-ui;
