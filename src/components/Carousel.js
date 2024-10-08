@@ -10,9 +10,9 @@ const Carousel = () => {
       content: "Explore breathtaking landscapes and serene hill stations.",
     },
     {
-      image: "/assests/home-bg.jpg",
-      heading: "Unwind in Shimla: The Queen of Hills",
-      content: "Experience colonial charm and stunning views in Shimla.",
+      image: "/assests/dharamshala.jpg",
+      heading: "Dharamshala: Where Spirituality Meets Serenity",
+      content: "Dharamshala: The Little Lhasa of India",
     },
     {
       image: "/assests/carousel-manali.jpg",
@@ -20,9 +20,9 @@ const Carousel = () => {
       content: "Enjoy trekking, paragliding, and vibrant local markets.",
     },
     {
-      image: "/assests/dharamshala.jpg",
-      heading: "Explore the Mystical Land of Dharamshala",
-      content: "Experience Tibetan culture and spiritual tranquility in Dharamshala.",
+      image: "/assests/shimla.jpg",
+      heading: "Shimla: The Queen of Hills Awaits",
+      content: "Discover Shimla: Where Heritage Meets Beauty",
     },
   ];
 
