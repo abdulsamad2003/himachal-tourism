@@ -12,7 +12,7 @@ const PopupForm = ({ isPopupVisible, setIsPopupVisible }) => {
     if (!formSubmitted && !sessionStorage.getItem("formSubmitted") && !isPopupVisible) {
       const timer = setTimeout(() => {
         setIsPopupVisible(true);
-      }, 5000); // 20 seconds
+      }, 15000); // 20 seconds
       return () => clearTimeout(timer);
     }
   }, [formSubmitted, isPopupVisible, setIsPopupVisible]);
@@ -23,7 +23,7 @@ const PopupForm = ({ isPopupVisible, setIsPopupVisible }) => {
     if (!formSubmitted) {
       setTimeout(() => {
         setIsPopupVisible(true);
-      }, 5000); // 5 seconds
+      }, 15000); // 5 seconds
     }
   };
 
