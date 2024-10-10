@@ -39,10 +39,16 @@
     transition: transform 0.3s ease-in-out;
     position: relative;
 }
-.packageCard:hover p , .services li{
+.packageCard:hover  li{
+    color: white;
+}
+.packageCard:hover p {
     color: white;
 }
 .packageCard:hover .card-content h2{
+    color: white;
+}
+.packageCard:hover .card-content span{
     color: white;
 }
 .packageCard .image-container{
