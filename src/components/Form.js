@@ -1,11 +1,12 @@
-"use client";
+"use client"; // Ensure this is a client component in Next.js 13+
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation'; // Import useRouter from next/navigation for Next.js 13+ (app directory)
 import "../styles/Form.css";
-import { sendGAEvent } from '@next/third-parties/google'
- 
+import Link from 'next/link';
+
 const Form = () => {
-  
   const [formStatus, setFormStatus] = useState(null); // Track form status
+  const router = useRouter(); // Initialize useRouter for navigation
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -51,6 +52,8 @@ const Form = () => {
       Name: ${object.fullName}
       Email: ${object.email}
       Phone: ${object.phone}
+      People: ${object.people}
+      Message: ${object.message}
       `;
 
       // Send message to Telegram
@@ -66,13 +69,17 @@ const Form = () => {
       });
 
       if (!telegramResponse.ok) {
+        console.error("Failed to send message to Telegram.");
         setFormStatus('error'); // Handle Telegram error
       }
 
-      // Automatically clear the success message after 10 seconds
+      // Automatically clear the success message after 20 seconds
       setTimeout(() => {
         setFormStatus(null);
-      }, 10000); // 10 seconds
+      }, 20000); // 20 seconds
+
+      // Redirect to Thank You page after form submission
+      router.push('/thankyou'); // Use the router to push the user to the thank you page
 
     } catch (error) {
       console.error("Error submitting form:", error.message);
@@ -83,8 +90,8 @@ const Form = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="form">
-        <h2>FREE Travel Consultation!</h2>
-        <p> Enter your details in the enquiry form and Our travel expert will call you soon to</p>
+        <h2>Send Your Enquiry Now!</h2>
+        <p>Our Travel Expert Will Call You as soon as possible.</p>
 
         <label htmlFor="fullName">Full Name</label><br />
         <input
@@ -115,11 +122,26 @@ const Form = () => {
           required
         /><br /><br />
 
-        <div className="contactButton">
-          <button 
-           onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
-          style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
-        </div>
+        <label htmlFor="people">No of People</label><br />
+        <input
+          type="number"
+          id="people"
+          name="people"
+          placeholder="10"
+          min="1"
+        /><br /><br />
+
+        <label htmlFor="message">Message</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Type here..."
+        ></textarea><br /><br />
+
+        <Link href='/thankyou' className="contactButton">
+          <button style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
+        </Link>
 
         {formStatus === 'success' && <p className="success-message">Form submitted successfully!</p>}
         {formStatus === 'error' && <p className="error-message">There was an error submitting the form. Please try again later.</p>}
