@@ -122,23 +122,6 @@ const Form = () => {
           required
         /><br /><br />
 
-        <label htmlFor="people">No of People</label><br />
-        <input
-          type="number"
-          id="people"
-          name="people"
-          placeholder="10"
-          min="1"
-        /><br /><br />
-
-        <label htmlFor="message">Message</label><br />
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          placeholder="Type here..."
-        ></textarea><br /><br />
-
         <Link href='/thankyou' className="contactButton">
           <button style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
         </Link>

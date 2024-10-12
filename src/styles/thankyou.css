@@ -7,20 +7,27 @@
      align-items: center;
      text-align: center;
 }
-.thankyou-container img{
-    width: 300px;
-    height: 212px;
-     @media screen and (max-width: 600px){
-        margin-top: 50px;
-     }
+ 
+.thankyou-image{
+    margin-top: 40px;
+    width: 500px;
+    height: 300px;
+    @media screen and (max-width: 600px){
+        margin-top: 130px;
+        width: 300px;
+        height: 200px;
+    }
 }
 .thankyou-container h1 {
     font-size: 25px; 
-    margin: 5px 0; 
+    margin-top: 40px;
+    /* margin: 5px 0;  */
     @media screen and (max-width: 600px){
         font-size: 1.5rem; /* Adjust font size for better readability */
     }
 }
+
+ 
 .thankyou-container p {
     font-size: 1.4rem; 
     line-height: 1.4rem;
@@ -37,6 +44,9 @@
     font-size: 20px;
     border-radius: 2px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     cursor: pointer; /* Indicate it's clickable */
     transition: background-color 0.3s ease; /* Smooth hover effect */
