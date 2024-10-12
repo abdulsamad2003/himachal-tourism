@@ -6,7 +6,7 @@ const Thankyou = () => {
   return (
     <div className='thankyou-container'>
          <img
-            src="/assests/thank-you.png"
+            src="/assests/thankyou.png"
             alt="Thank You"
         />
       <h1>Thanks for reaching out!</h1>
