@@ -117,7 +117,7 @@ const Form = () => {
           id="phone"
           name="phone"
           placeholder="Enter Your 10-digit mobile no."
-          pattern="^\+?[0-9]{11,12}$"
+          pattern="[0-9]{10}"
           title="Phone number must be exactly 10 digits"
           required
         /><br /><br />
