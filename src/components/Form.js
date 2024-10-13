@@ -1,12 +1,13 @@
-"use client"; // Ensure this is a client component in Next.js 13+
+"use client";
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation'; // Import useRouter from next/navigation for Next.js 13+ (app directory)
 import "../styles/Form.css";
-import Link from 'next/link';
+import { sendGAEvent } from '@next/third-parties/google';
+import { useRouter } from 'next/navigation';
+
 
 const Form = () => {
   const [formStatus, setFormStatus] = useState(null); // Track form status
-  const router = useRouter(); // Initialize useRouter for navigation
+  const router = useRouter()
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -45,15 +46,13 @@ const Form = () => {
       // 2. Send form data to Telegram bot
       const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"; // Your bot token
       const chatId = "148013002"; // Your chat ID
-      
+
       // Create the message text for Telegram
       const telegramMessage = `
       New Form Submission:
       Name: ${object.fullName}
       Email: ${object.email}
       Phone: ${object.phone}
-      People: ${object.people}
-      Message: ${object.message}
       `;
 
       // Send message to Telegram
@@ -67,19 +66,20 @@ const Form = () => {
           text: telegramMessage,
         }),
       });
-
-      if (!telegramResponse.ok) {
-        console.error("Failed to send message to Telegram.");
+      
+      const telegramResult = await telegramResponse.json();
+      console.log("Telegram response:", telegramResult);
+      
+      if (!telegramResponse.ok || !telegramResult.ok) {
+        console.error("Error sending message to Telegram:", telegramResult);
         setFormStatus('error'); // Handle Telegram error
       }
+      
 
-      // Automatically clear the success message after 20 seconds
+      // Automatically clear the success message after 10 seconds
       setTimeout(() => {
         setFormStatus(null);
-      }, 20000); // 20 seconds
-
-      // Redirect to Thank You page after form submission
-      router.push('/thankyou'); // Use the router to push the user to the thank you page
+      }, 10000); // 10 seconds
 
     } catch (error) {
       console.error("Error submitting form:", error.message);
@@ -90,8 +90,8 @@ const Form = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="form">
-        <h2>Send Your Enquiry Now!</h2>
-        <p>Our Travel Expert Will Call You as soon as possible.</p>
+        <h2>FREE Travel Consultation!</h2>
+        <p> Enter your details in the enquiry form and Our travel expert will call you soon to</p>
 
         <label htmlFor="fullName">Full Name</label><br />
         <input
@@ -122,9 +122,11 @@ const Form = () => {
           required
         /><br /><br />
 
-        <Link href='/thankyou' className="contactButton">
-          <button style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
-        </Link>
+        <div className="contactButton" onClick={router.push('/thankyou')}>
+          <button
+            onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
+            style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
+        </div>
 
         {formStatus === 'success' && <p className="success-message">Form submitted successfully!</p>}
         {formStatus === 'error' && <p className="error-message">There was an error submitting the form. Please try again later.</p>}
