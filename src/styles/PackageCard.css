@@ -93,13 +93,13 @@
     width: fit-content;
 }
 .card-content h2{
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(16px, 2vw, 16px);
     color: #041a34;
     width: fit-content;
 }
 .card-content p{
     font-family: var(--inter-font);
-    font-size: clamp(10px, 2vw, 12px);
+    font-size: clamp(12px, 2vw, 12px);
     color: var(--grey-color);
     padding: .5vh 0;
     width: fit-content;
@@ -113,17 +113,17 @@
 }
 .card-content .pricing h4{
     color: #0868F8;
-    font-size: clamp(12px, 1.5vw, 14px);
+    font-size: clamp(14px, 1.5vw, 14px);
     font-weight: 600;
 }
 .card-content .pricing span{
     color: var(--grey-color);
-    font-size: clamp(10px, 1.5vw, 12px);
+    font-size: clamp(14px, 1.5vw, 14px);
     text-decoration: line-through;
 }
 .card-content .pricing h5{
     color: #0868F8;
-    font-size: clamp(8px, 1.5vw, 10px);
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -145,7 +145,7 @@
     width: fit-content;
     column-gap: 1vw;
     font-family: var(--inter-font);
-    font-size: clamp(10px, 2vw, 12px);
+    font-size: 14px;
     color: var(--grey-color);
     padding: .6vh 0;
     font-weight: 400;
