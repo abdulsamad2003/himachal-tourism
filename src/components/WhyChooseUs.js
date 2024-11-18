@@ -5,7 +5,7 @@ import { BiSolidPlaneAlt } from "react-icons/bi";
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-us">
+    <section id="why-us" className="why-us">
       <div className="left-img">
         <Image
           src="/assests/why-choose-us.png"

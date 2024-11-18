@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Link from "next/link";
 import "../styles/Footer.css";
 import Image from "next/image";
@@ -9,10 +10,21 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
+import PopupForm from "./PopupForm";
 
 const Footer = () => {
+
+  const [isPopupVisible, setIsPopupVisible] = useState(false); // Manage popup visibility
+
+  const openPopup = () => {
+    setIsPopupVisible(true); // Function to open the popup
+  };
+
+
   return (
-    <footer className="footer">
+    <>
+      <PopupForm isPopupVisible={isPopupVisible} setIsPopupVisible={setIsPopupVisible} />
+       <footer className="footer">
       <main className="footer-content left">
         <div className="logo">
           <Image src="/assests/logo.png" alt="Logo" width={40} height={40} />
@@ -75,16 +87,13 @@ const Footer = () => {
             </ul>
             <ul>
               <li>
-                <Link href="#about">About Us</Link>
+                <Link href="#why-us">About Us</Link>
               </li>
               <li>
-                <Link href="#services">Privacy Policy</Link>
+                <Link href="#" onClick={openPopup}>Contact Us</Link>
               </li>
               <li>
-                <Link href="#expertise">Contact Us</Link>
-              </li>
-              <li>
-                <Link href="/contact">Discounts</Link>
+                <Link href="#deals">Discounts</Link>
               </li>
             </ul>
           </div>
@@ -114,6 +123,8 @@ const Footer = () => {
         </div>
       </main>
     </footer>
+    </>
+ 
   );
 };
 

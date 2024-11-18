@@ -85,8 +85,6 @@ const PackageCard = () => {
         </div>
       ))}
     </section>
-
-
     </>
  
   );
