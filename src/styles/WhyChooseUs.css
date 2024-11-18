@@ -28,6 +28,16 @@
 .why-us-content .heading{
     text-align: left;
 }
+.why-us-content h1{
+    font-size: 22px;
+}
+.why-us-content p{
+    font-size: 16px;
+    @media screen and (max-width: 700px) {
+        font-size: 14px;
+    }
+
+}
 .why-us-content .heading .small-heading{
     justify-content: flex-start;
 }
@@ -52,4 +62,10 @@
     background: #ffff;
     box-shadow: 0px 16px 24px 0px #6061701F;
 
+}
+.h-one{
+    font-size: 22px
+}
+.para{
+    font-size: 200px;
 }

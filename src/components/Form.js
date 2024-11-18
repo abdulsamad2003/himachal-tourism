@@ -1,11 +1,12 @@
-"use client";
+'use client'
 import React, { useState } from 'react';
 import "../styles/Form.css";
-import { sendGAEvent } from '@next/third-parties/google'
- 
+import { sendGAEvent } from '@next/third-parties/google';
+import { useRouter } from 'next/navigation';
+
 const Form = () => {
-  
   const [formStatus, setFormStatus] = useState(null); // Track form status
+  const router = useRouter();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -35,16 +36,19 @@ const Form = () => {
         console.log(result);
         setFormStatus('success'); // Set success status
         event.target.reset(); // Reset the form fields
+
+        // 2. Redirect to the thank you page after a successful submission
+        router.push('/thankyou'); // Change '/thank-you' to your actual thank you page route
       } else {
         console.error(result);
         setFormStatus('error'); // Set error status
         return;
       }
 
-      // 2. Send form data to Telegram bot
-      const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"; // Your bot token
-      const chatId = "148013002"; // Your chat ID
-      
+      // 3. Send form data to Telegram bot
+      const botToken = "7953446645:AAGMjGBx1cotqlXIWci7PraNNJZLS6nKgWk"; 
+      const chatId = "148013002";
+
       // Create the message text for Telegram
       const telegramMessage = `
       New Form Submission:
@@ -65,7 +69,11 @@ const Form = () => {
         }),
       });
 
-      if (!telegramResponse.ok) {
+      const telegramResult = await telegramResponse.json();
+      console.log("Telegram response:", telegramResult);
+
+      if (!telegramResponse.ok || !telegramResult.ok) {
+        console.error("Error sending message to Telegram:", telegramResult);
         setFormStatus('error'); // Handle Telegram error
       }
 
@@ -116,9 +124,9 @@ const Form = () => {
         /><br /><br />
 
         <div className="contactButton">
-          <button 
-           onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
-          style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
+          <button
+            onClick={() => sendGAEvent('event', 'buttonClicked', { value: 'xyz' })}
+            style={{ width: "100%", textAlign: "center" }} type="submit">Submit</button>
         </div>
 
         {formStatus === 'success' && <p className="success-message">Form submitted successfully!</p>}

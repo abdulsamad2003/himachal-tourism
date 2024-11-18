@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="choose-us-card">
-          <div className="card">
+          <div className="card" style={{border: '1px solid #00000010'}}>
             <div className="icon">
             <Image
                 src="/assests/earth-icon.png"
@@ -37,8 +37,8 @@ const WhyChooseUs = () => {
                 ></Image>
             </div>
             <div className="card-content">
-              <h1>Easy Tour Booking</h1>
-              <p>
+              <h1 className="h-one" style={{fontSize:'20px'}}>Easy Tour Booking</h1>
+              <p className="para" style={{fontSize:'15px'}}>
                 We believe in providing hassle free and convenient tour booking
                 options to our guests. Tour booking can be done through our
                 different portals which include our Toll Free
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" style={{border: '1px solid #00000010'}}>
             <div className="icon">
             <Image
                 src="/assests/suitcase-icon.png"
@@ -56,15 +56,15 @@ const WhyChooseUs = () => {
                 ></Image>
             </div>
             <div className="card-content">
-              <h1>Customizable Tour Packages</h1>
-              <p>
+              <h1 style={{fontSize:'20px'}}>Customizable Tour Packages</h1>
+              <p style={{fontSize:'15px'}}>
               We understand our guests needs to perfection and thus provide them with
               flexible customized holiday packages according to their needs are requirements.
               </p>
             </div>
           </div>
 
-          <div className="card">
+          <div className="card" style={{border: '1px solid #00000010'}}>
             <div className="icon">
             <Image
                 src="/assests/privacy-icon.png"
@@ -74,8 +74,8 @@ const WhyChooseUs = () => {
                 ></Image>
             </div>
             <div className="card-content">
-              <h1>Experienced Travel Consultants</h1>
-              <p>
+              <h1 style={{fontSize:'20px'}}>Experienced Travel Consultants</h1>
+              <p style={{fontSize:'15px'}}>
               We understand our guests needs to perfection and thus provide them with flexible customized holiday packages according to their needs are requirements.
               </p>
             </div>
